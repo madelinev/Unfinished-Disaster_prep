@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Disaster Prep</title>
+<link rel="stylesheet" href="/static/style.css" />
+<link rel="stylesheet" href="/static/dropdown.css">
+<ul>
+  <li><a href="{{ url_for('main') }}">Home</a></li>
+  <li><a href="{{ url_for('firstaid') }}">First Aid</a></li>
+  <li><a href="{{ url_for('disasterprep') }}">Personalized Checklist</a></li>
+	<li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Flood</a>
+    <div class="dropdown-content">
+	<a href="{{ url_for('protectfromflood') }}">Protection from Flood</a>
+	<a href="{{ url_for('animals') }}">Animals</a>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Wildfire</a>
+    <div class="dropdown-content">
+		<a href="{{ url_for('outside') }}">Outside</a>
+		<a href="{{ url_for('buildingonfire') }}">If a Building is on Fire</a>
+		<a href="{{ url_for('fireplan') }}">Fire Plan</a>
+    </div>
+  </li>
+</ul>
+</head>
+<body>
+
+<h1> Welcome to Disaster Prep!</h1>
+<p> Disaster prep alerts users when a natural disaster has been predicted in their area and provides users with a personalized plan and check list of necessary items to keep users safe.</p>
+<p> Click the link below to complete the questionaire below to create your personalized check list!</p>
+</body>
+</html>
