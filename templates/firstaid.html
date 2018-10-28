@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>First aid kit</title>
+<link rel="stylesheet" href="/static/dropdown.css">
+<ul>
+  <li><a href="{{ url_for('main') }}">Home</a></li>
+  <li><a href="{{ url_for('firstaid') }}">First Aid</a></li>
+	<li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Flood</a>
+    <div class="dropdown-content">
+	<a href="{{ url_for('protectfromflood') }}">Protection from Flood</a>
+	<a href="{{ url_for('animals') }}">Animals</a>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Wildfire</a>
+    <div class="dropdown-content">
+		<a href="{{ url_for('outside') }}">Outside</a>
+		<a href="{{ url_for('buildingonfire') }}">If a Building is on Fire</a>
+		<a href="{{ url_for('fireplan') }}">Fire Plan</a>
+    </div>
+  </li>
+</ul>
+</head>
+<body>
+<h1>First Aid Kit</h1>
+<ul style="list-style-type:square">
+	<li>Flashlight and extra batteries</li>
+	<li>Nonperishable food to last 3 days (for each person)</li>
+	<li>1 gallon of water per person (enough for 3 days)</li>
+	<li>Purification tablets</li>
+	<li>Plates, cutlary, and, of course, a manual can opener</li>
+	<li>3 days worth of clothing per person</li>
+	<li>Eyeglases and/or contacts with contact solution (enough for three days)</li>
+	<li>Nescesary medication</li>
+	<li>electronics and chargers</li>
+	<li>waterproof matches</li>
+	<li>A whistle</li>
+	<li>Strong tape</li>
+	<li>Battery operated or crank radio</li>
+</body>
+</html>
