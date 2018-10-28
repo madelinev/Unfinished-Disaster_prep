@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Outside</title>
+<link rel="stylesheet" href="/static/dropdown.css">
+<ul>
+  <li><a href="{{ url_for('main') }}">Home</a></li>
+  <li><a href="{{ url_for('disasterprep') }}">Personalized Checklist</li>
+	<li><a href="{{ url_for('firstaid') }}">First Aid</a></li>
+	<li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Flood</a>
+    <div class="dropdown-content">
+	<a href="{{ url_for('protectfromflood') }}">Protection from Flood</a>
+	<a href="{{ url_for('animals') }}">Animals</a>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Wildfire</a>
+    <div class="dropdown-content">
+		<a href="{{ url_for('outside') }}">Outside</a>
+		<a href="{{ url_for('buildingonfire') }}">If a Building is on Fire</a>
+		<a href="{{ url_for('fireplan') }}">Fire Plan</a>
+    </div>
+  </li>
+</ul>
+</head>
+<body>
+<h2>Outside:</h2>
+<u2 stlye="list-style-type:square">
+	<li>Gather up flammable items from the exterior of the house and bring them inside (patio furniture, children’s toys, door mats, trash cans, etc.) or place them in your pool</li>
+	<li>Turn off propane tanks</li>
+	<li>Move propane BBQ appliances away from structures</li>
+	<li>Connect garden hoses to outside water valves or spigots for use by firefighters. Fill water buckets and place them around the house</li>
+	<li>Don’t leave sprinklers on or water running, they can affect critical water pressure</li>
+	<li>Leave exterior lights on so your home is visible to firefighters in the smoke or darkness of night</li>
+	<li>Put your Emergency Supply Kit in your vehicle</li>
+	<li>Back your car into the driveway with vehicle loaded and all doors and windows closed. Carry your car keys with you</li>
+	<li>Have a ladder available and place it at the corner of the house for firefighters to quickly access your roof</li>
+	<li>Seal attic and ground vents with pre-cut plywood or commercial seals</li>
+	<li>Patrol your property and monitor the fire situation. Don’t wait for an evacuation order if you feel threatened</li>
+	<li>Check on neighbors and make sure they are preparing to leave</li>
+</body>
+</html>
