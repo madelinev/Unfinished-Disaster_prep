@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fire Plan</title>
+<link rel="stylesheet" href="/static/dropdown.css">
+<ul>
+  <li><a href="{{ url_for('main') }}">Home</a></li>
+  <li><a href="{{ url_for('firstaid') }}">First Aid</a></li>
+	<li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Flood</a>
+    <div class="dropdown-content">
+	<a href="{{ url_for('protectfromflood') }}">Protection from Flood</a>
+	<a href="{{ url_for('animals') }}">Animals</a>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Wildfire</a>
+    <div class="dropdown-content">
+		<a href="{{ url_for('outside') }}">Outside</a>
+		<a href="{{ url_for('buildingonfire') }}">If a Building is on Fire</a>
+		<a href="{{ url_for('fireplan') }}">Fire Plan</a>
+    </div>
+  </li>
+</ul>
+</head>
+<body>
+<h2>Fire plan:</h2>
+<ul style="list-style-type:square">
+	<li>Shut all windows and doors, leaving them unlocked</li>
+	<li>Remove flammable window shades, curtains and close metal shutters</li>
+	<li>Remove lightweight curtains</li>
+	<li>Move flammable furniture to the center of the room, away from windows and doors</li>
+	<li>Shut off gas at the meter; turn off pilot lights</li>
+	<li>Leave your lights on so firefighters can see your house under smoky conditions</li>
+	<li>Shut off the air conditioning</li>
+<a href="{{ url_for('main') }}">Return to Homepage</a>
+</body>
+</html>
