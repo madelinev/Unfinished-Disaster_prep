@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>How to evacuate and prepare a building in the case of a fire</title>
+<link rel="stylesheet" href="/static/dropdown.css">
+<ul>
+  <li><a href="{{ url_for('main') }}">Home</a></li>
+  <li><a href="{{ url_for('firstaid') }}">First Aid</a></li>
+	<li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Flood</a>
+    <div class="dropdown-content">
+	<a href="{{ url_for('protectfromflood') }}">Protection from Flood</a>
+	<a href="{{ url_for('animals') }}">Animals</a>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Wildfire</a>
+    <div class="dropdown-content">
+		<a href="{{ url_for('outside') }}">Outside</a>
+		<a href="{{ url_for('buildingonfire') }}">If a Building is on Fire</a>
+		<a href="{{ url_for('fireplan') }}">Fire Plan</a>
+    </div>
+  </li>
+</ul>
+</head>
+<body>
+<h2>How to evacuate and prepare a building in the case of a fire:</h2>
+<ul style="list-style-type:square">
+	<li>Check if doors handles are hot. If they are, chances are the next room has fire</li>
+	<li>Avoid large rooms, as the oxygen will fuel the fire</li>
+	<li>Do not use elevators</li>
+</body>
+</html>
